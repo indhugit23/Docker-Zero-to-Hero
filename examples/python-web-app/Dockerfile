@@ -3,7 +3,7 @@ FROM ubuntu
 WORKDIR /app
 
 COPY requirements.txt /app/
-COPY manage.py /app/          # <-- add this line
+COPY devops/manage.py /app/          # <-- add this line
 COPY devops /app/devops/      # <-- keep devops folder
 
 RUN apt-get update && apt-get install -y python3 python3-pip python3-venv
